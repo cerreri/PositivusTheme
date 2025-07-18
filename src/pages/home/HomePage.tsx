@@ -14,7 +14,7 @@ export default function HomePage() {
         document.title = "Positivus";
     }, []);
     return (
-        <main className="w-full h-full flex flex-col px-[7%] gap-20 justify-center overflow-hidden">
+        <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20 justify-center overflow-hidden">
             <HeadSection />
             <SponsorsSection />
             <ServiceSection />

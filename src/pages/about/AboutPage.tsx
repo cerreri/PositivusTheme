@@ -10,7 +10,7 @@ export default function AboutPage() {
         document.title = "Positivus | About";
     }, []);
     return (
-        <main className="w-full h-full flex flex-col px-[7%] gap-20">
+        <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20">
             <HeadSection />
             <ImpactSection />
             <JourneySection />
