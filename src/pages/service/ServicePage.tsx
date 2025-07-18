@@ -10,10 +10,10 @@ export default function ServicePage() {
     }, []);
 
     return (
-        <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20">
+        <>
             <HeadSection />
             <ProcessSection />
             <CaseSection />
-        </main>
+        </>
     )
 }

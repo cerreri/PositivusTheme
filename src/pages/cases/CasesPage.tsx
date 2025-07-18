@@ -7,9 +7,9 @@ export default function CasesPage() {
         document.title = "Positivus | Cases";
     }, []);
     return (
-        <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20">
+        <>
             <HeadSection />
             <SuccessSection />
-        </main>
+        </>
     )
 }

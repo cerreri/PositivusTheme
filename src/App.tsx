@@ -14,7 +14,9 @@ function App() {
     <div className="bg-white pt-30 overflow-hidden">
       <ScrollToTop />
       <Header />
-      <Outlet />
+      <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20 justify-center overflow-hidden">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   )

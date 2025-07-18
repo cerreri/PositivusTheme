@@ -8,10 +8,10 @@ export default function BlogPage() {
         document.title = "Positivus | Blog";
     }, []);
     return (
-        <main className="w-full h-full flex flex-col sm:px-[7%] px-[1%] gap-20">
+        <>
             <HeadSection />
             <ContentSection />
             <InsightsSection />
-        </main>
+        </>
     )
 }
