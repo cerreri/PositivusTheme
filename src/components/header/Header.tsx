@@ -1,7 +1,7 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import LogoSVG from "../../svg/LogoSvg";
-import menu from "/menu.svg";
-import close from "/close.svg";
+import menu from "../../../public/menu.svg";
+import close from "../../../public/close.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
