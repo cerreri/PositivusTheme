@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-myBlack: #191a23;
+  --color-myGreen: #b9ff66;
+  --color-myGray: #f3f3f3;
+  --color-myOrange: #ff7a59;
+  --color-myRed: #d81f26;
+  --color-myBlue: #2d8cff;
+  --color-myYellow: #ff9900;
+  --color-myLightGreen: #e6ffb3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.space-grotesk-300 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.space-grotesk-400 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.space-grotesk-500 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.space-grotesk-600 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.space-grotesk-700 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: #666 !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b9ff66 !important;
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #b9ff66 !important; 
+  background: rgba(185, 255, 102, 0.1) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  position: static !important;
+  transform: none !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(185, 255, 102, 0.2) !important;
+  transform: scale(1.1) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
