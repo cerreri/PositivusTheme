@@ -1,7 +1,5 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import LogoSVG from "../../svg/LogoSvg";
-import menu from "../../../public/menu.svg";
-import close from "../../../public/close.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
@@ -86,7 +84,7 @@ export default function Header() {
                 className="lg:hidden w-[24px] h-[24px] cursor-pointer hover:opacity-50 transition-opacity duration-50"
                 onClick={() => setIsMenuOpen(prev => !prev)}
             >
-                {isMenuOpen ? <img src={close} alt="menu" /> : <img src={menu} alt="menu" />}
+                {isMenuOpen ? <img src={'/close.svg'} alt="menu" /> : <img src={'/menu.svg'} alt="menu" />}
             </div>
             <AnimatePresence initial={false}>
                 {isMenuOpen && (
