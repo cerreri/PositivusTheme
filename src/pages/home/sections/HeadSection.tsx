@@ -14,6 +14,7 @@ export default function HeadSection() {
                             animate={{opacity: 1, filter: "blur(0px)"}}
                             transition={{duration: 0.5, ease: "easeInOut"}}
                             viewport={{ once: true }}
+                            loading="eager"
                         />
                     </div>
                     <div className="md:w-1/2 w-full h-full flex flex-col items-center justify-center gap-3 md:gap-7">
