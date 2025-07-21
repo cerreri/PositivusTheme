@@ -13,6 +13,7 @@ export default function HeadSection() {
                             initial={{opacity: 0, filter: "blur(10px)"}}
                             animate={{opacity: 1, filter: "blur(0px)"}}
                             transition={{duration: 0.5, ease: "easeInOut"}}
+                            viewport={{ once: true }}
                         />
                     </div>
                     <div className="md:w-1/2 w-full h-full flex flex-col items-center justify-center gap-3 md:gap-7">
@@ -21,6 +22,7 @@ export default function HeadSection() {
                             initial={{opacity: 0, y: 50}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.1, delay: 0, damping: 15, type: "spring", stiffness: 300}}
+                            viewport={{ once: true }}
                         >
                             Navigating the <br />
                             digital landscape <br />
@@ -31,6 +33,7 @@ export default function HeadSection() {
                             initial={{opacity: 0, y: 50}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.1, delay: 0.5, damping: 15, type: "spring", stiffness: 300}}
+                            viewport={{ once: true }}
                         >
                             Our digital marketing agency helps 
                             businesses grow and succeed online 
@@ -45,6 +48,7 @@ export default function HeadSection() {
                             initial={{opacity: 0, y: 50}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.1, delay: 1, damping: 15, type: "spring", stiffness: 300}}
+                            viewport={{ once: true }}
                         >
                             <span className="space-grotesk-400 text-[clamp(12px,_2vw,_17px)]">
                                 Book a consultation

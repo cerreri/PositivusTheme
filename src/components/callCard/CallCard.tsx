@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function CallCard({
     title, 
@@ -25,12 +26,26 @@ export default function CallCard({
     buttonStyle?: string,
     animate?: "scale" | "blur"
 }) {
+    const cardRef = useRef(null);
+    const isInView = useInView(cardRef, { 
+        once: true, 
+        amount: 0.1,
+        margin: "-100px 0px -100px 0px"
+    });
+
     return (
-        <motion.div className={cardStyle}
+        <motion.div ref={cardRef} className={cardStyle}
                     initial={{opacity: 0, y: 50, ...(animate === "scale" ? {scale: 0.95} : {filter: "blur(10px)"})}}
-                    whileInView={{opacity: 1, y: 0, ...(animate === "scale" ? {scale: 1} : {filter: "blur(0px)"})}}
-                    transition={{duration: 0.6, ease: "easeOut", delay: 0.6,}}
-                    viewport={{ once: true }}
+                    animate={isInView ? {
+                        opacity: 1, 
+                        y: 0, 
+                        ...(animate === "scale" ? {scale: 1} : {filter: "blur(0px)"})
+                    } : {
+                        opacity: 0, 
+                        y: 50, 
+                        ...(animate === "scale" ? {scale: 0.95} : {filter: "blur(10px)"})
+                    }}
+                    transition={{duration: 0.3, ease: "easeOut", delay: 0.3,}}
                 >
                     <span className={"space-grotesk-500 " + titleStyle}>
                         {title} 
