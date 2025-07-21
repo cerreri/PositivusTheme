@@ -36,14 +36,14 @@ export default function HeadSection() {
                     flex lg:flex-row flex-col justify-between lg:items-start items-center bg-myBlack rounded-[35px] 
                     px-[clamp(2rem,_3vw,_7rem)] py-[clamp(2rem,_3vw,_7rem)] gap-10`}
                     initial={{opacity: 0, scale: 0.95}}
-                    whileInView={{opacity: 1, scale: 1}}
+                    animate={{opacity: 1, scale: 1}}
                     transition={{duration: 0.6, ease: "easeInOut", delay: 0.3}}
                     viewport={{ once: true }}
                 >
                     <div className="flex flex-row lg:gap-8 gap-2 lg:w-1/3 w-4/5 lg:items-center items-start">
                         <motion.div 
                             initial={{opacity: 0, rotate: -35}}
-                            whileInView={{opacity: 1, rotate: 0}}
+                            animate={{opacity: 1, rotate: 0}}
                             transition={{duration: 0.6, ease: "easeOut", delay: 0.6}}
                             viewport={{ once: true }}
                         >
@@ -54,7 +54,7 @@ export default function HeadSection() {
                             <motion.span
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.2 * index + 1, ease: "easeOut" }}
                                 viewport={{ once: true }}
                                 className={
@@ -70,7 +70,7 @@ export default function HeadSection() {
                     <motion.div 
                         className="flex flex-col gap-5 lg:w-3/5 w-4/5 items-center justify-between"
                         initial={{opacity: 0, scale: 0.95}}
-                        whileInView={{opacity: 1, scale: 1}}
+                        animate={{opacity: 1, scale: 1}}
                         transition={{duration: 0.6, ease: "easeInOut", delay: 0.6}}
                         viewport={{ once: true }}
                     >

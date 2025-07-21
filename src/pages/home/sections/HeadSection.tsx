@@ -4,12 +4,12 @@ export default function HeadSection() {
     return (
         <section className="overflow-hidden">
             <div className="flex flex-col gap-20">
-                <div className="w-full h-full flex flex-col items-center justify-center gap-10 md:flex-row-reverse">
-                    <div className="md:w-1/2 w-4/5">
+                <div className="w-full h-full flex flex-col items-center justify-center gap-10 md:flex-row-reverse ">
+                    <div className="md:w-3/5 w-4/5 aspect-[4/3] h-full">
                         <motion.img 
                             src="/HomeSectionHeadImage.png" 
                             alt="Head Section Image" 
-                            className="w-full h-auto object-cover" 
+                            className="w-full h-full object-contain" 
                             initial={{opacity: 0, filter: "blur(10px)"}}
                             animate={{opacity: 1, filter: "blur(0px)"}}
                             transition={{duration: 0.5, ease: "easeInOut"}}
@@ -48,7 +48,7 @@ export default function HeadSection() {
                             " hover:bg-white hover:text-black transition-all duration-50 text-white"}
                             initial={{opacity: 0, y: 50}}
                             animate={{opacity: 1, y: 0}}
-                            transition={{duration: 0.1, delay: 1, damping: 15, type: "spring", stiffness: 300}}
+                            transition={{duration: 0.3, delay: 1, damping: 15, type: "spring", stiffness: 300}}
                             viewport={{ once: true }}
                         >
                             <span className="space-grotesk-400 text-[clamp(12px,_2vw,_17px)]">

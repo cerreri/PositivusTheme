@@ -21,7 +21,7 @@ export default function PageTitle({
         <motion.img
           src={image}
           alt="about"
-          className="absolute top-0 left-0 w-full h-full object-cover self-center"
+          className="absolute top-0 left-0 w-full lg:w-3/5 h-full object-contain self-center"
           initial={{ opacity: 0, filter: "blur(10px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 1, ease: "easeInOut" }}
