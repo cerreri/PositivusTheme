@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function PageTitle({title, description, image}: {title: string, description: string, image: string}) {
     return (
         <div className={`
-            w-full h-full flex lg:flex-row flex-col gap-10 
+            w-full h-full flex lg:flex-row flex-col gap-10 min-h-[500px] 
             lg:items-start items-center justify-around bg-myGray rounded-[35px] 
             px-[clamp(2rem,_3vw,_7rem)] py-[clamp(2rem,_3vw,_7rem)] `
         }>
@@ -11,6 +11,7 @@ export default function PageTitle({title, description, image}: {title: string, d
                 initial={{opacity: 0, filter: "blur(10px)"}}
                 animate={{opacity: 1, filter: "blur(0px)"}}
                 transition={{duration: 1, ease: "easeInOut"}}
+                loading="eager"
             />
             <div className="flex flex-col gap-10 lg:items-start lg:w-1/3 w-full items-center">
                 <motion.h1 className="space-grotesk-500 text-[clamp(2rem,_3vw,_4rem)] text-myBlack"
