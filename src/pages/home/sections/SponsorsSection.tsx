@@ -11,7 +11,7 @@ export default function SponsorsSection() {
     return (
         <section className="overflow-hidden whitespace-nowrap">
             <div className="hidden lg:inline-block overflow-hidden whitespace-nowrap max-w-full">
-                <Marquee gradient={false} speed={50} pauseOnHover={true}>
+                <Marquee gradient={false} speed={50} pauseOnHover={true} autoFill={true}>
                     <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
                         <AmazonSvg className={
                             "text-myBlack cursor-pointer hover:text-myYellow " +
